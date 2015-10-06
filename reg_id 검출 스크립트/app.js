@@ -95,7 +95,7 @@ function json_call(reg_id) {
       var reg_id=reg_id;
       var deviceid=device.uuid;
       // gcm reg_id 등록  
-         $.post("http://m.gallerybear.com/gcm_reg_app.php",
+         $.post("http://도메인/gcm_reg_app.php",
    {
     reg_id:reg_id,
     deviceid:deviceid
