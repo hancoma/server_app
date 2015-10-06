@@ -1,0 +1,61 @@
+var pushNotification;
+
+            function onLoad() {
+				 document.addEventListener("deviceready", onDeviceReady, false);
+}
+ function onDeviceReady() {
+        // Register the event listener
+        var uuid=device.uuid;
+            // uuid 정리 
+
+           
+  
+pushNotification = window.plugins.pushNotification;
+
+
+
+
+    pushNotification.register(
+        successHandler,
+        errorHandler, {
+            "senderID":"600905178536",
+            "ecb":"onNotificationGCM"
+        });
+            
+        document.addEventListener("backbutton", function(e)
+    {
+   
+
+      navigator.app.backHistory();
+    
+    }, false);
+
+
+  document.addEventListener("menubutton", function(e)
+    {
+       
+
+ if (confirm('exit')) {
+        navigator.app.exitApp();
+    }
+         
+       }, false);
+
+
+ var success = function(status) {
+         navigator.notification.activityStop();
+        }
+
+        var error = function(status) {
+         navigator.notification.activityStop();
+        }
+navigator.notification.activityStart("gallerybear", "updating");
+        window.cache.clear( success, error );
+
+        
+      
+
+  check_uuid(uuid);
+ 
+ 
+    }
