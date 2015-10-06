@@ -1,7 +1,7 @@
 <?
 $headers = array(
  'Content-Type:application/json',
- 'Authorization:key=AIzaSyBW-U34FHfLe7kL5m4sNIBRB3gg8JABlhs'
+ 'Authorization:key=서비스 아이디'
 );
  
 $arr   = array();
@@ -10,7 +10,13 @@ $arr['data']['title'] = $subject;
 
 $arr['data']['message'] = $contents; 
 $arr['data']['url'] = "http://naver.com"; 
-$arr['registration_ids'][]= "APA91bHsTrvjHcCT1QPJOIUWh5UKfm1oxzhG2zpDb9J22I6bzz3neS9-rc-sE36ksqnjZAqkd4iObll9XHXWHIZ1WBbZwOxkDo41tgGfbP7MLB9-OjZUgvvVKg_vmrnaCb5o8mGdoDt06cnfchDeeEhZv49t43KJlQ";
+
+$arr['registration_ids'][]= "회원reg_id";
+$arr['registration_ids'][]= "회원reg_id";
+$arr['registration_ids'][]= "회원reg_id";
+$arr['registration_ids'][]= "회원reg_id";
+$arr['registration_ids'][]= "회원reg_id";
+
 
 
 
